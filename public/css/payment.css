@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0;
+    clear: both;
+    color: #000000;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+body {
+    font-family: 'Asap', sans-serif !important;
+}
+
+:root{
+    --bg_color: #894BCA;
+    --text_color: #747474;
+    --white: #fff;
+
+}
+
+
+/* =============== COMMON CSS FOR WEB SITE =============== */
+
+
+
+input:focus-visible{
+    outline: none;
+}
+
+textarea:focus-visible{
+    outline: none;
+}
+
+select:focus-visible{
+    outline: none;
+}
+
+input{
+    font-size: 16px;
+    text-align: center;
+    border: none;
+}
+
+select {
+    padding: 5px;
+}
+
+a, button{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    display: inline-block;
+    transition: all linear .2s;
+    color: var(--white);
+}
+
+a.bg, button.bg {
+    background: var(--bg_color);
+    padding: 12px 30px;
+    transition: all linear .5s;
+    background-size: 200% auto;
+    border-radius: 8px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+a.bg:hover , button.bg:hover {
+    background: #6e18ca;
+}
+
+.d_flex{
+    display: flex;
+    align-items: center;
+}
+
+.d_justify{
+    justify-content: space-between;
+}
+
+h3{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    color: var(--bg_color);
+    margin-top: 20px;
+}
+
+
+p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--text_color);
+    margin-top: 15px;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START ClearPayment PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.ClearPayment{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.ClearPaymentContent {
+    width: 650px;
+    padding: 30px;
+    border-radius: 20px;
+    background: var(--white);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ClearPaymentContent .Text h5{
+    font-family: 'Niconne', cursive;
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--bg_color);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+
+.ClearPaymentContent .Text h3{
+    font-size: 30px;
+    line-height: 40px;
+    color: #FF6347;
+    margin-top: 0;
+}
+
+.ClearPaymentContent .Text h4{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 36px;
+    color: var(--text_color);
+    padding: 20px 0;
+}
+
+.ClearPaymentContent .FormPart{
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.ClearPaymentContent .FormPart img{
+    width: 100%;
+}
+
+.ClearPaymentContent .CustomeInput label{
+    margin-left: 10px;
+}
+
+.ClearPaymentContent .CustomeInput input{
+    width: 20px;
+    height: 20px;
+}
+
+
+.ClearPaymentContent .CustomeInput:first-child{
+    margin-right: 30px;
+}
+
+.ClearPaymentContent button{
+    width: 100%;
+    border: 0;
+}
+
+.ClearPaymentContent button:focus{
+    outline: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Media PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 767.9px){
+
+    .ClearPaymentContent {
+        width: 95%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .ClearPaymentContent .Text h5 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .ClearPaymentContent .Text h4 {
+        font-size: 15px;
+        line-height: 22px;
+        padding: 10px 0;
+    }
+    .ClearPaymentContent .Text h3 {
+        font-size: 26px;
+        line-height: 36px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    a.bg, button.bg {
+        padding: 6px 30px;
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */

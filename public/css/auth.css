@@ -1,0 +1,391 @@
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Login PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+:root {
+    --bg_color: #FB8C00;
+    --bg_color2: #894BCA;
+    --header_text: #407EF9;
+    --text_color: #6F6F6F;
+    --text_color2: #A3A3A3;
+    --border_color: #EDEDED;
+    --white: #fff;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--text_color);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 66px;
+    line-height: 100px;
+    color: var(--header_text);
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--text_color);
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--text_color);
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text_color);
+}
+
+a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--header_text);
+    display: inline-block;
+    transition: all linear .2s;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text_color2);
+}
+
+span {
+    font-weight: 400;
+    font-size: 13.5948px;
+    line-height: 20px;
+    color: var(--bg_color);
+
+}
+
+svg {
+    transition: all linear .2s;
+}
+
+input {
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 10px;
+    padding: 15px 20px;
+    border: none;
+    color: var(--text_color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+input::placeholder {
+    color: #B9B9B9;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    width: 100%;
+    border: none;
+    color: var(--text_color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--header_text);
+    color: #FFF;
+    padding: 8px 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    transition: all linear .2s;
+}
+
+button:hover {
+    background: var(--bg_color);
+}
+
+.custome_input {
+    position: relative;
+}
+
+#login .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+#login .row {
+    --bs-gutter-x: 0;
+}
+
+.left_login {
+    padding: 100px 200px;
+    text-align: center;
+    background: #FFF;
+    height: 100vh;
+}
+
+.left_login.register {
+    padding: 100px 200px;
+    text-align: center;
+    background: #FFF;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#login .img img {
+    height: 80px;
+}
+
+.left_login h3 {
+    margin-top: 10px;
+}
+
+.left_login p {
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 70%;
+}
+
+#login .form_part {
+    margin-top: 60px;
+    text-align: left;
+}
+
+#login .form_part .custome_input {
+    padding-bottom: 20px;
+}
+
+#login .form_part .custome_input button {
+    color: #FFF;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#login .form_part .custome_input a.forgot_pass {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#login .form_part .custome_input a {
+    text-align: right;
+}
+
+#login .form_part .custome_input p {
+    text-align: center;
+}
+
+#login .form_part p.logInSocial {
+    font-weight: 600;
+    font-size: 14px;
+    color: #888888;
+}
+
+#login .form_part .custome_input .logInSocialLink {
+    text-align: center;
+    margin-top: 12px;
+}
+
+#login .form_part .custome_input .logInSocialLink a svg {
+    height: 40px;
+}
+
+#login .right_login {
+    background: linear-gradient(180deg, #3737CA 0%, #1F4DD9 100%);
+    padding: 100px;
+    text-align: center;
+    height: 100vh;
+}
+
+#login .right_login_content {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+#login .right_login_content img {
+    width: 100%;
+    height: auto;
+}
+
+#login .owl-dots {
+    margin-top: 50px;
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dots button {
+    margin-top: 0;
+}
+
+.owl-dots span {
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    transition: all linear .3s;
+    border-radius: 30px;
+}
+
+.owl-dot.active span {
+    background: var(--header_text);
+}
+
+#login .form_part .custome_input p a {
+    margin-left: 5px;
+}
+
+.validation-error {
+    border-color: var(--bg_color) !important;
+    border: 2px solid !important;
+}
+.validation-error-label {
+    color: var(--bg_color) !important;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Register PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.Register{
+    background: var(--bg_color2);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RegisterForm{
+    text-align: center;
+    margin: 0 auto;
+    width: 700px;
+    background: var(--white);
+    padding: 30px 40px;
+    border-radius: 20px;
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.RegisterForm .Logo img{
+    height: 80px;
+}
+
+.RegisterForm .text {
+    margin-top: 10px;
+}
+
+.RegisterForm .text h3{
+    font-size: 32px;
+    line-height: 45px;
+    color: var(--text_color);
+    font-weight: 600;
+}
+
+.RegisterForm .text p {
+    margin: 0 auto;
+    margin-top: 5px;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 500;
+    max-width: 70%;
+}
+
+.RegisterForm .CustomerInput{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.RegisterForm .CustomerInput label{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--text_color);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.RegisterForm .CustomerInput input{
+    width: 100%;
+    background: #F5F5F5;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.RegisterForm .CustomerInput button{
+    width: 100%;
+    background: var(--bg_color2);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    transition: all linear .2s;
+}
+
+.RegisterForm .CustomerInput button:hover{
+    background: var(--bg_color);
+}
+
+.RegisterForm .CustomerInput p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.RegisterForm .CustomerInput p a{
+    font-weight: 500;
+    color: var(--bg_color2);
+}
+
+.RegisterForm .CustomerInput p a:hover{
+    color: var(--bg_color);
+}
+
+
+/* width */
+
+.Register ::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.Register ::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+/* Handle */
+.Register ::-webkit-scrollbar-thumb {
+    background: var(--bg_color);
+}
+
+/* Handle on hover */
+.Register ::-webkit-scrollbar-thumb:hover {
+    background: var(--bg_color);
+}

@@ -1,0 +1,316 @@
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1700px) {
+    .container {
+        padding: 0 150px;
+    }
+    .SmartDashbordItem {
+        width: 170px;
+    }
+    .ShopThemeItem h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .BannerText {
+        padding-right: 18px;
+    }
+    .BannerRight {
+        padding-left: 10px;
+    }
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 120px;
+    }
+    .Menubar li a {
+        padding-right: 35px;
+    }
+    .Login a {
+        padding: 10px 20px;
+        margin-left: 15px;
+    }
+    .BannerText {
+        padding-right: 0;
+    }
+    .BannerRight {
+        padding-left: 0;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .HowToSetUp .Header p {
+        padding: 0 30px;
+    }
+    .BestFeaturesText {
+        width: 70%;
+    }
+    .SmartDashbordItem p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .SmartDashbordItem {
+        width: 130px;
+        padding: 20px 15px;
+    }
+    .ShopThemeItem h3 {
+        font-size: 18px;
+    }
+    .ShopThemeItem a {
+        padding: 10px;
+        font-size: 17px;
+    }
+    .CustomerItem {
+        padding: 50px 20px;
+        padding-top: 100px;
+    }
+    .CustomerItem h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .CustomerItem h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .CustomerItem h5 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .Quate img {
+        height: 90px;
+    }
+    .ChossePackageItem {
+        padding: 20px;
+    }
+    .ChossePackageItem li {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 5px;
+    }
+    .AskQusTabs button {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .OurPluginItem h3 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .OurPluginItem h4 {
+        font-size: 17px;
+    }
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1279px) {
+    .container {
+        padding: 0px;
+        max-width: 90%;
+    }
+
+    .Menubar li a {
+        padding: 0 15px;
+        font-size: 15px;
+    }
+    .Login a:first-child {
+        margin-left: 0;
+    }
+    .Login a {
+        padding: 10px 15px;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    .BestFeaturesText {
+        width: 90%;
+    }
+    .SmartDashbordItem {
+        width: 122px;
+        padding: 19px 15px;
+    }
+    .ShopThemeItem h3 {
+        font-size: 20px;
+        word-break: break-word;
+    }
+    .OurPluginItem {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .DesktopNav {
+        display: none;
+        text-align: left;
+    }
+    .Menubar {
+        padding-left: 10px;
+        text-align: right;
+    }
+    .Menubar ul {
+        margin-top: 30px;
+        text-align: left;
+    }
+    .Menubar ul li {
+        display: block;
+    }
+    .Menubar ul li a {
+        color: var(--text_color);
+        padding: 10px 0;
+    }
+    .Login {
+        text-align: left;
+        margin-top: 30px;
+    }
+    .Login a {
+        border: 1px solid var(--bg_color2);
+    }
+    .btn-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    button.MenuIcon {
+        text-align: right;
+        width: 100%;
+    }
+    button.MenuIcon img {
+        height: 40px;
+    }
+    .BannerText {
+        text-align: center;
+    }
+    .BannerText span:last-child {
+        text-align: center;
+    }
+    .BannerRight {
+        text-align: center;
+    }
+    .BannerBg .overlay {
+        text-align: center;
+    }
+    .BannerBg .overlay img {
+        width: 70%;
+    }
+    .HowToSetUp {
+        margin-top: 180px;
+    }
+    .BestFeaturesText {
+        width: 55%;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    .section_gaps {
+        margin-top: 80px;
+    }
+    .ManageYourShop {
+        padding-top: 80px;
+        text-align: center;
+    }
+    .ManageYourShop img {
+        width: 50%;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        display: none;
+    }
+    .swiper-wrapper {
+        padding: 50px 0;
+    }
+    .ChossePackageItem {
+        margin-top: 30px;
+    }
+    .AskQusContent .col-lg-6:first-child {
+        order: 2;
+    }
+    .AskQusContent .col-lg-6:last-child {
+        order: 1;
+    }
+    .AskQusTabs {
+        margin-top: 50px;
+    }
+    .OurPluginItem {
+        margin-bottom: 30px;
+    }
+    .FormPart {
+        margin-top: 30px;
+    }
+    .Footer {
+        background: var(--bg_color2);
+        padding: 80px 0;
+    }
+    .Footer .Address {
+        margin-bottom: 30px;
+    }
+    .FormPart {
+        margin-top: 80px;
+    }
+    .SmartDashbordItem {
+        width: 150px;
+        padding: 30px;
+    }
+    .MobileNav {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .SmartDashbordItem {
+        width: 48%;
+        padding: 30px;
+    }
+    .SmartDashbord {
+        flex-wrap: wrap;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .Banner h2 {
+        margin: 10px 0;
+    }
+    .BannerBg {
+        margin-top: 30px;
+    }
+    .BannerBg {
+        width: 100%;
+    }
+    .HowToSetUp .Header p {
+        padding: 0;
+    }
+    .Header {
+        margin-bottom: 30px;
+    }
+    .BestFeaturesText {
+        width: 98%;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    .SmartDashbordItem {
+        margin-bottom: 30px;
+    }
+    .CustomerReview .Customeroverlay {
+        top: 50px;
+        left: 0;
+    }
+    .CustomerReview .CustomeroverlayRight {
+        bottom: 50px;
+        right: 0;
+    }
+    .SocialIcon a {
+        width: 60px;
+        height: 60px;
+        font-size: 40px;
+        margin: 0 10px;
+    }
+    .Footer .Logo {
+        margin-bottom: 40px;
+    }
+    .FormPart {
+        margin-top: 30px;
+    }
+}

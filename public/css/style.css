@@ -1,0 +1,1448 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0;
+    clear: both;
+    color: #000000;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    background: #f6f6f6;
+}
+
+:root {
+    --bg_color: #a16cf8;
+    --bg_color2: #f3ecff;
+    --header_text: #407ef9;
+    --text_color: #747474;
+    --border_color: #ededed;
+}
+
+.green {
+    color: #5dca08;
+}
+
+.blue {
+    color: #407ef9;
+}
+
+.parpel {
+    color: #a16cf8;
+}
+
+.red {
+    color: #fe0707;
+}
+
+.custom_width {
+    max-width: calc(100% - 390px);
+    margin-right: 40px;
+}
+
+.btn-default {
+    background: var(--bg_color) !important;
+    color: #fff !important;
+    padding: 5px 30px !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+}
+
+/*---------------- Common Css ----------------*/
+
+h1 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--text_color);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 66px;
+    line-height: 100px;
+    color: var(--header_text);
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text_color);
+}
+
+a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--bg_color);
+    display: inline-block;
+    transition: all linear 0.2s;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text_color);
+}
+
+span {
+    font-weight: 400;
+    font-size: 13.5948px;
+    line-height: 20px;
+    color: var(--bg_color);
+}
+
+svg {
+    transition: all linear 0.2s;
+}
+
+input {
+    width: 100%;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 15px 20px;
+    border: none;
+    color: #b9b9b9;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.d_flex {
+    display: flex;
+    align-items: center;
+}
+
+.d_justify {
+    justify-content: space-between;
+}
+
+.section_gaps {
+    margin-top: 40px;
+}
+
+.custome_input {
+    position: relative;
+}
+
+.custome_input .search {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custome_input textarea {
+    width: 100%;
+    border: none;
+    background: #ffffff;
+    border-radius: 6.12174px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: var(--text_color);
+}
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--bg_color);
+    padding: 8px 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Dropdown Part */
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+ul.dropdown-menu {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: 0px 2px 5px 6px rgb(0 0 0 / 6%);
+}
+
+ul.dropdown-menu li a {
+    padding: 5px 13px;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text_color);
+}
+
+ul.dropdown-menu li:first-child a {
+    border-radius: 10px 10px 0px 0px;
+}
+
+ul.dropdown-menu li:last-child a {
+    border-radius: 0px 0px 10px 10px;
+}
+
+ul.dropdown-menu li a:hover {
+    background: var(--bg_color2);
+    color: var(--bg_color);
+}
+
+.up_arrow {
+    position: absolute;
+    top: -16px;
+    right: 10px;
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Side bar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#side_bar {
+    width: 320px;
+    height: 100vh;
+    background: #ffffff;
+    box-shadow: 0px 41.7776px 58.4887px rgba(0, 0, 0, 0.10064),
+        0px 22.3363px 31.2708px rgba(0, 0, 0, 0.083455),
+        0px 12.5216px 17.5302px rgba(0, 0, 0, 0.07),
+        0px 6.6501px 9.31014px rgba(0, 0, 0, 0.056545),
+        0px 2.76726px 3.87416px rgba(0, 0, 0, 0.0393604);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#side_bar .logo {
+    padding: 25px;
+    border-bottom: 1px solid var(--border_color);
+}
+
+#side_bar img {
+    height: 50px;
+}
+
+#side_bar a svg {
+    font-size: 30px;
+}
+
+#side_bar .menuItem {
+    padding: 25px;
+}
+
+#side_bar .menuItem li {
+    margin-bottom: 10px;
+}
+
+#side_bar .menuItem a {
+    width: 100%;
+    background: var(--bg_color2);
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#side_bar .menuItem a.active {
+    background: var(--bg_color);
+    color: #fff;
+}
+
+#side_bar .menuItem a.active svg path {
+    fill: #fff;
+}
+
+#side_bar .menuItem a svg {
+    margin-right: 15px;
+}
+
+#side_bar .menuItem a:hover {
+    background: var(--bg_color);
+    color: #fff;
+}
+
+#side_bar .menuItem a:hover svg path {
+    fill: #fff;
+    border: 1px solid #fff;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START nab_bar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#nab_bar {
+    background: #ffffff;
+    box-shadow: 0px 7px 12px -5px rgba(0, 0, 0, 0.25);
+    padding: 20px 0;
+}
+
+.menu_text h1 span {
+    font-size: 32px;
+    color: var(--header_text);
+    font-weight: 600;
+}
+
+/* menu_settings */
+.menu_settings {
+    margin-left: 50px;
+}
+
+.menu_settings .notification {
+    position: relative;
+    display: inline-block;
+}
+
+.menu_settings .notification .notification_alert {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #fe0707;
+    border-radius: 50%;
+}
+
+.profile_part img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Total order PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#Total_order .Total_order_item {
+    background: #ffffff;
+    box-shadow: 0px 4.57994px 6.41192px rgba(0, 0, 0, 0.056545);
+    border-radius: 15px;
+    padding: 25px;
+    /* padding-bottom: 100px; */
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 260px;
+}
+
+.Total_order_item .order_carb {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+}
+
+.Total_order_item .header_part h3 svg {
+    margin-right: 5px;
+}
+
+.dropdown_part span {
+    cursor: pointer;
+}
+
+.dropdown_part .arrow {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--border_color);
+    box-shadow: 0px 0px 4.82092px #e4e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Total_order_item .last_part ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.Total_order_item .last_part ul li span {
+    font-size: 16px;
+}
+
+.Total_order_item .last_part ul li span.percent {
+    color: #5dca08;
+}
+
+.Total_order_item .last_part ul li span.percent.red {
+    color: #fe0707;
+}
+
+.Total_order_item h2.color {
+    color: #5dca08;
+}
+
+/* openTicket */
+#Total_order.openTicket .Total_order_item {
+    padding-bottom: 25px;
+}
+
+#Total_order.openTicket .Total_order_item .last_part ul li p {
+    font-size: 13px;
+}
+
+#Total_order.openTicket .Total_order_item .last_part ul li span {
+    font-size: 13px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START ClientList PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#ClientList .FilterBy {
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+
+#ClientList .FilterBy h3 {
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+#ClientList .FilterBy .dropdown_part {
+    background: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+#ClientList .FilterBy .FilterBy_item {
+    margin-right: 20px;
+}
+
+#ClientList .FilterBy .FilterBy_item:last-child {
+    margin-right: 0px;
+}
+
+#ClientList .FilterBy .dropdown_part span {
+    color: var(--text_color);
+}
+
+#ClientList .FilterBy .dropdown_part .arrow {
+    background: none;
+    box-shadow: none;
+}
+
+#ClientList .FilterBy .FilterBy_item .custome_input input {
+    background: #fff;
+    width: 350px;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.FilterBy a.CreateInvoice {
+    background: var(--bg_color);
+    color: #fff;
+    font-size: 16px;
+    padding: 3px 30px;
+    border-radius: 5px;
+}
+
+.FilterBy a.CreateInvoice svg {
+    margin-left: 5px;
+}
+
+.table_part table {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.table_part table tbody tr {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+
+.table_part table tbody tr th {
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--border_color);
+}
+
+.table_part table tbody tr td {
+    font-size: 14px;
+    color: var(--text_color);
+    font-weight: 400;
+    padding: 10px !important;
+    border-bottom: 0;
+    border-bottom: 1px solid var(--border_color);
+    vertical-align: middle;
+}
+
+.table_part table tbody tr td a {
+    background: var(--bg_color);
+    color: #fff;
+    font-size: 14px;
+    padding: 2px 20px;
+    border-radius: 5px;
+}
+
+.table_part table tbody tr td.subject_for_ticket a {
+    background: none;
+    color: var(--text_color);
+    padding: 0;
+}
+
+.table_part table tbody tr td.img a {
+    background: none;
+    padding: 0;
+}
+
+.table_part table tbody tr td .dropdown_part span {
+    color: var(--bg_color);
+    font-weight: 600;
+    border: 1px solid var(--border_color);
+    text-align: center;
+    padding: 2px 10px;
+    border-radius: 5px;
+    max-width: 100px;
+}
+
+.table_part table tbody tr td .dropdown_part .arrow {
+    background: none;
+    box-shadow: none;
+}
+
+.table_part table tbody tr td .dropdown_part a {
+    background: #fff;
+    color: var(--text_color);
+    padding: 8px 15px;
+    box-shadow: none;
+}
+
+.table_part table tbody tr td .dropdown_part a:hover {
+    background: var(--bg_color2);
+    color: var(--bg_color);
+}
+
+.table_part table tbody tr td ul.dropdown-menu {
+    max-width: 180px;
+}
+
+.table_part table input {
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+.table_part table input::placeholder {
+    font-size: 14px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Billing PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#Total_order.billing_pages .Total_order_item {
+    margin-bottom: 30px;
+}
+
+#ClientList.openTicket .header_part .svg {
+    margin-right: 10px;
+}
+
+#ClientList.openTicket .header_part h3 {
+    font-size: 20px;
+    color: var(--header_text);
+}
+
+.table_part table img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.table_part table tbody tr td.name {
+    font-weight: 600;
+    color: var(--bg_color);
+}
+
+.table_part table tbody tr td.name a {
+    background: none;
+    color: var(--bg_color);
+    padding: 0;
+}
+
+.table_part table tbody tr td.Role .dropdown_part span {
+    color: var(--text_color);
+    max-width: max-content;
+}
+
+.table_part table tbody tr td.dropdown .dropdown_part span {
+    background: var(--bg_color);
+    color: #fff;
+}
+
+.table_part table tbody tr td.dropdown .dropdown_part span svg path {
+    fill: #fff;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START User Details Part PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.user_ownInfo_content {
+    background: #ffffff;
+    box-shadow: 0px 4.57994px 6.41192px rgba(0, 0, 0, 0.056545);
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.user_ownInfo_content.bg {
+    background: #f5f5f5;
+    box-shadow: none;
+}
+
+.user_ownInfo_content .profile_part .img {
+    margin-right: 15px;
+}
+
+.user_ownInfo_content .profile_part img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user_ownInfo_content .profile_part h3 {
+    color: var(--bg_color);
+}
+
+.user_ownInfo_content p {
+    font-size: 16px;
+}
+
+.user_ownInfo_content p span {
+    font-weight: 600;
+    color: var(--text_color);
+    font-size: 16px;
+}
+
+.user_ownInfo_content a {
+    background: var(--bg_color);
+    color: #fff;
+    font-size: 16px;
+    padding: 1px 20px;
+    box-shadow: 0px 0px 8px #ceb2fd;
+    border-radius: 5px;
+}
+
+.user_ownInfo_content a.view {
+    background: #5dca08;
+    margin-right: 15px;
+}
+
+.user_ownInfo_content a.delete {
+    background: #fe0707;
+}
+
+.dropdown_part a {
+    background: #fff;
+    color: #fff;
+    font-size: 16px;
+    padding: 1px 20px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.SolvedTicket p {
+    font-size: 13px;
+}
+
+.SolvedTicket p svg {
+    margin-right: 5px;
+}
+
+.SolvedTicket p span {
+    font-size: 14px;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+#Total_order.billing_pages .Total_order_item {
+    position: relative;
+}
+
+#Total_order.billing_pages .Total_order_item .SolvedTicket {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+.client_info tr.thead {
+    background: #f5f5f5;
+}
+
+.client_info tr.body {
+    background: #fff;
+    box-shadow: 0px 4.57994px 6.41192px rgba(0, 0, 0, 0.056545);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Modal Part PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.modal_part .header .svg {
+    margin-right: 10px;
+}
+
+.modal-content {
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 60px 80px;
+    position: relative;
+}
+
+.modal-content .middle {
+    background: #fff;
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.modal-lg,
+.modal-xl {
+    max-width: 80%;
+}
+
+.button_part {
+    margin-top: 30px;
+}
+
+.button_part button {
+    padding: 5px 30px;
+    margin-right: 15px;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.button_part a {
+    background: #fe0707;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.modal-content button.btn-close {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* background: red; */
+    top: 0;
+    right: 30px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Staff Details PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#user_ownInfo.staffDetails .user_ownInfo_content .profile_part {
+    text-align: center;
+    opacity: 0.5;
+    min-width: 11%;
+    margin-right: 20px;
+}
+
+#user_ownInfo.staffDetails .user_ownInfo_content .profile_part:last-child {
+    margin-right: 0;
+}
+
+#user_ownInfo.staffDetails .user_ownInfo_content {
+    overflow-x: auto;
+    justify-content: center;
+}
+
+#user_ownInfo.staffDetails .user_ownInfo_content .profile_part.active {
+    opacity: 1;
+}
+
+#user_ownInfo.staffDetails .user_ownInfo_content .profile_part .img {
+    margin-right: 0;
+}
+
+#user_ownInfo.staffDetails .user_ownInfo_content .profile_part a {
+    background: none;
+    font-size: 13px;
+    color: var(--bg_color);
+    padding: 0;
+    box-shadow: none;
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+/* staffDetails_with_picture */
+.staffDetails_with_picture {
+    background: #ffffff;
+    box-shadow: 0px 4.57994px 6.41192px rgba(0, 0, 0, 0.056545);
+    border-radius: 10px;
+    height: 95%;
+}
+
+.staffDetails_with_picture .header_part {
+    padding: 30px;
+}
+
+.staffDetails_with_picture .img {
+    margin-right: 15px;
+}
+
+.staffDetails_with_picture img {
+    height: 120px;
+    width: 120px;
+    border-radius: 12px;
+}
+
+.staffDetails_with_picture h3 {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.staffDetails_with_picture h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--bg_color);
+    font-weight: 600;
+}
+
+.staffDetails_with_picture ul li {
+    padding: 15px 30px;
+    align-items: flex-start;
+}
+
+.staffDetails_with_picture ul li:nth-child(odd) {
+    background: #fff;
+}
+
+.staffDetails_with_picture ul li:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.staffDetails_with_picture ul li .svg {
+    margin-right: 15px;
+}
+
+.staffDetails_with_picture ul li .svg svg {
+    height: 25px;
+    width: 25px;
+}
+
+.staffDetails h2 {
+    font-size: 48px;
+    line-height: 58px;
+    padding: 10px 0;
+}
+
+.staffDetails a.add_task {
+    background: var(--bg_color);
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Invoice PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#user_ownInfo.staffDetails.InvoicePages .user_ownInfo_content {
+    justify-content: flex-start;
+    padding: 20px 30px;
+}
+
+.invoide_header {
+    margin-bottom: 30px;
+}
+
+.invoide_header h3 {
+    color: var(--text_color);
+    font-size: 32px;
+    line-height: 45px;
+}
+
+#user_ownInfo.staffDetails.InvoicePages .user_ownInfo_content .img {
+    margin-right: 20px;
+}
+
+#user_ownInfo.staffDetails.InvoicePages .user_ownInfo_content .profile_part h3 {
+    color: var(--text_color);
+}
+
+#user_ownInfo.staffDetails.InvoicePages .user_ownInfo_content .profile_part p {
+    padding: 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+#user_ownInfo.staffDetails.InvoicePages .address_item span {
+    color: var(--text_color);
+}
+
+.user_ownInfo_content.address {
+    background: #f5f5f5;
+}
+
+#user_ownInfo.staffDetails.InvoicePages .address_item .svg {
+    margin-right: 20px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Open Ticket Details PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.open_ticket_details_content {
+    background: #ffffff;
+    box-shadow: 0px 4.57994px 6.41192px rgba(0, 0, 0, 0.056545);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.open_ticket_details_content h3 {
+    font-size: 24px;
+}
+
+.open_ticket_details_content h3 span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.create_ticket {
+    margin-top: 50px;
+}
+
+.create_ticket ul li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 18px;
+    color: var(--text_color);
+}
+
+.create_ticket ul li.name {
+    color: var(--bg_color);
+}
+
+.create_ticket ul li.open {
+    color: var(--header_text);
+}
+
+.create_ticket ul li span {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text_color);
+}
+
+/* Ticket Details */
+.open_ticket_details_content .TicketDetail {
+    margin-top: 30px;
+}
+
+.open_ticket_details_content .TicketDetail h3 {
+    font-size: 18px;
+}
+
+.open_ticket_details_content .TicketDetail .custome_input textarea {
+    background: #f5efff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.open_ticket_details_content .TicketDetail a {
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 3px 30px;
+    background: var(--bg_color);
+    color: #fff;
+    font-size: 16px;
+}
+
+.open_ticket_details_content .TicketDetail.nobg .custome_input textarea {
+    background: none;
+    border: 1px solid #a3a3a3;
+}
+
+.open_ticket_details_content .TicketDetail .custome_input {
+    margin-top: 10px;
+}
+
+.open_ticket_details_content .TicketDetail a.Send {
+    background: #5dca08;
+}
+
+#open_ticket_details.CustomerName .open_ticket_details_content {
+    background: none;
+    box-shadow: none;
+}
+
+#open_ticket_details.CustomerName .open_ticket_details_content .TicketDetail {
+    background: #f5efff;
+    border-radius: 10px;
+    padding: 15px 30px;
+    position: relative;
+}
+
+#open_ticket_details.CustomerName
+    .open_ticket_details_content
+    .TicketDetail::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 100%;
+    background: #a16cf8;
+    border-radius: 33px 0px 0px 33px;
+    top: 0;
+    left: 0;
+}
+
+#open_ticket_details.CustomerName
+    .open_ticket_details_content
+    .TicketDetail.bg_white {
+    background: #ffffff;
+}
+
+#open_ticket_details.CustomerName
+    .open_ticket_details_content
+    .TicketDetail.bg_white::after {
+    border-radius: 0px 33px 33px 0px;
+    left: unset;
+    right: 0;
+}
+
+#open_ticket_details.CustomerName .open_ticket_details_content .TicketDetail p {
+    padding: 0;
+    background: none;
+}
+
+#open_ticket_details.CustomerName
+    .open_ticket_details_content
+    .TicketDetail
+    h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#open_ticket_details.CustomerName
+    .open_ticket_details_content
+    .TicketDetail
+    h3
+    span {
+    font-size: 16px;
+    color: var(--text_color);
+    font-weight: 400;
+}
+
+#open_ticket_details.CustomerName .open_ticket_details_content .TicketDetail a {
+    background: var(--text_color);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Settings Pages PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#settingsPages .settings_tabs {
+    background: #ffffff;
+    box-shadow: 0px 4.57994px 6.41192px rgba(0, 0, 0, 0.056545);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#settingsPages .settings_tabs ul {
+    padding: 0;
+    margin: 0 !important;
+}
+
+#settingsPages .settings_tabs a {
+    background: #dedede;
+    margin-right: 20px;
+    font-size: 16px;
+    color: var(--text_color);
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-weight: 500;
+}
+
+#settingsPages .settings_tabs a.active {
+    background: var(--header_text);
+    color: #fff;
+}
+
+.settings_tabs_content {
+    background: #ffffff;
+    box-shadow: 0px 4.57994px 6.41192px rgba(0, 0, 0, 0.056545);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.settings_tabs_content .custome_input {
+    margin-bottom: 20px;
+}
+
+.settings_tabs_content .custome_input:last-child {
+    margin-bottom: 0;
+}
+
+.settings_tabs_content .custome_input label {
+    margin-bottom: 10px;
+}
+
+.settings_tabs_content .custome_input input {
+    background: #fff;
+    border: 1px solid var(--border_color);
+    color: var(--text_color);
+}
+
+.settings_tabs_content .custome_input input::placeholder {
+    font-size: 14px;
+}
+
+.settings_tabs_content .custome_input button {
+    margin-top: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.domain-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.pagination {
+    justify-content: center;
+}
+.domain-status-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0rem;
+}
+
+.domain-status-buttons a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--bg_color);
+    display: inline-block;
+    transition: all linear 0.2s;
+    border: 1px solid #a16cf8;
+    padding: 5px 10px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.domain-status-buttons a:hover {
+    background-color: var(--bg_color);
+    color: white;
+}
+
+span.doamin-status-header {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+
+p.no-data-found {
+    color: red;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+
+.title-search-section {
+    display: flex;
+    background: white;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.domain-reject-btn {
+    background-color: red !important;
+}
+
+td.domain-status-update-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Domain rejected modal */
+
+.btn-close:focus {
+    box-shadow: none !important;
+}
+
+.modal-content {
+    padding: 0px !important;
+}
+
+/* Toaster default color set */
+.toast {
+    background-color: #a16cf8 !important;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Couriers Pages PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.courierSection {
+    margin-left: auto;
+    padding-bottom: 4rem;
+    padding-left: clamp(18rem, 0vw, 4rem);
+}
+
+.courierSection .box {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ece9f1;
+    box-shadow: 0 0 40px 0 rgba(98, 18, 182, 0.12);
+}
+
+.courierSection .box .box_heading {
+    padding: 0.65rem 1.5rem;
+    border-bottom: 1px solid #ece9f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.courierSection .box .box_body {
+    padding: 0.65rem 1.5rem;
+}
+
+.courierSection .box .box_body .courier_details > * {
+    --reverse: 1;
+    margin-top: calc(1.45rem * calc(1 - var(--reverse)));
+    margin-bottom: calc(1.45rem * var(--reverse));
+}
+
+.courierSection .box .box_heading h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ac53e8;
+}
+
+.courierSection .heading h1 {
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+.courierSection .courier_details label,
+.courierSection .courier_details input,
+.courierSection .courier_details button,
+.courierSection .courier_details textarea {
+    font-size: 0.875rem;
+    color: #000;
+}
+.courierSection .courier_details label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.courierSection .courier_details input,
+.courierSection .courier_details textarea {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+.courierSection .courier_details textarea {
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+}
+.courierSection .courier_details button {
+    width: 100%;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.courierSection .courierSection_grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.courier_details .error {
+    font-size: 0.875rem;
+    color: #f01c00;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.courier_toast {
+    font-size: 0.875rem;
+    padding: 0.65rem 1rem;
+    border-radius: 4px;
+    background-color: #f5f1fb;
+    color: #ac53e8;
+    font-weight: 500;
+
+    display: none;
+    align-items: center;
+    gap: 8px;
+}
+
+.courier_toast.show {
+    display: flex;
+}
+
+.courier_toast.error {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+@media (min-width: 1280px) {
+    .courierSection {
+        padding-left: 0px;
+    }
+}
+@media (min-width: 768px) {
+    .courierSection .courierSection_grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .courierSection .courierSection_grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+#orderCoutDateRang {
+    display: block;
+    width: 85%;
+    padding: 5px 5px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 5px 0px;
+}
+
+.order-filter-input-fields {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.custom-order-filter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    position: relative;
+}
+
+.header_part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom-order-filter-wrapper a {
+    width: 40px;
+    height: 40px;
+    background: #a16cf8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.start_date_order_filter {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.start_date_order_filter label {
+    font-size: 12px;
+}
+
+.middle-and-last-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom-filter-back-button span {
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    END Couriers Pages PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
